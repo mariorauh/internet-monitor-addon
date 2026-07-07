@@ -1,19 +1,14 @@
 name: Internet Monitor
-
 slug: internet_monitor
-
-description: Monitor internet connectivity and record outages.
-
+description: Monitor internet connectivity and record internet outages.
 version: "0.1.0"
-
-url: https://github.com/mariorauh/internet-monitor-backend
 
 image: ghcr.io/mariorauh/internet-monitor-backend
 
+url: https://github.com/mariorauh/internet-monitor-backend
+
 startup: services
-
 boot: auto
-
 init: false
 
 host_network: true
