@@ -1,15 +1,8 @@
 # Internet Monitor
 
-## Features
+A Home Assistant Add-on for monitoring internet connectivity.
 
-## Requirements
+The add-on runs the Internet Monitor backend Docker image published on GHCR.
 
-## Installation
-
-## Development
-
-## Docker
-
-## Roadmap
-
-## License
+Repository:
+https://github.com/mariorauh/internet-monitor-backend

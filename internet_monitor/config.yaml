@@ -1,9 +1,17 @@
 name: Internet Monitor
-version: "0.2.0"
+
 slug: internet_monitor
-description: Monitor internet availability and record outages.
+
+description: Monitor internet connectivity and record outages.
+
+version: "0.1.0"
+
+url: https://github.com/mariorauh/internet-monitor-backend
+
+image: ghcr.io/mariorauh/internet-monitor-backend
 
 startup: services
+
 boot: auto
 
 init: false
@@ -11,8 +19,12 @@ init: false
 host_network: true
 
 arch:
-  - aarch64
   - amd64
+  - aarch64
 
 map:
   - addon_config:rw
+
+options: {}
+
+schema: {}

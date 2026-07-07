@@ -1,3 +1,3 @@
 #!/usr/bin/with-contenv bash
 
-python3 -u /app/main.py
+exec python3 -m app.main
