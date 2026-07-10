@@ -1,7 +1,7 @@
 name: Internet Monitor
 slug: internet_monitor
 description: Monitor internet connectivity and record internet outages.
-version: "0.2.3"
+version: "0.3.0"
 
 image: ghcr.io/mariorauh/internet-monitor-backend
 
