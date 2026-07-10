@@ -1,7 +1,7 @@
 name: Internet Monitor
 slug: internet_monitor
 description: Monitor internet connectivity and record internet outages.
-version: "0.3.0"
+version: "0.3.1"
 
 image: ghcr.io/mariorauh/internet-monitor-backend
 
@@ -20,6 +20,26 @@ arch:
 map:
   - addon_config:rw
 
-options: {}
+options:
+  http_target: "https://www.google.com"
+  http_timeout: 5
 
-schema: {}
+  dns_target: "8.8.8.8"
+
+  ping_target: "1.1.1.1"
+  ping_count: 4
+  ping_timeout: 2
+
+  check_interval: 5
+
+schema:
+  http_target: str
+  http_timeout: int(1,60)
+
+  dns_target: str
+
+  ping_target: str
+  ping_count: int(1,20)
+  ping_timeout: int(1,10)
+
+  check_interval: int(1,3600)
